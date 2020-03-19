@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!-- Styles -->
+    <link rel="stylesheet" href="media/css/grid.css">
+    <link rel="stylesheet" href="media/css/style.css">
+    <link rel="stylesheet" href="media/css/normalize.min.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet">
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <title>Vue JS</title>
+</head>
+<body>
+    <div id="app">
+        <div class="content block cldcenter fill">
+            <div class="centered block">
+                <div class="card content block cldcenter list_scroll">
+                    <ul v-if="list.length != 0" class="list">
+                        <li v-for="item in list" class="padding item" :id="'idn' + item.id" @click="del(item.id)">{{ item.text }}</li>
+                    </ul>
+                    <div class="padding item" v-else>Пусто</div>
+                </div>
+                <div class="card margin top content">
+                    <input type="text" v-model="text" @keyup.enter="addText" autofocus>
+                    <button type="button" @click="addText">Добавить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="media/js/script.js"></script>
+</body>
+</html>

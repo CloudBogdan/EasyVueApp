@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    position: relative;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Margin */
+.margin {
+    margin: 20px;
+}
+.margin.min {
+    margin: 10px;
+}
+.margin.max {
+    margin: 40px;
+}
+/* Margin > Hor */
+.margin.hor {
+    margin: 0 20px;
+}
+.margin.hor.min {
+    margin: 0 10px;
+}
+.margin.hor.max {
+    margin: 0 40px;
+}
+/* Margin > Ver */
+.margin.ver {
+    margin: 20px 0;
+}
+.margin.ver.min {
+    margin: 10px 0;
+}
+.margin.ver.max {
+    margin: 40px 0;
+}
+/* Margin > Dirs */
+/* > Top */
+.margin.top {
+    margin: 20px 0 0 0;
+}
+.margin.top.min {
+    margin: 10px 0 0 0;
+}
+.margin.top.max {
+    margin: 40px 0 0 0;
+}
+/* > Bottom */
+.margin.bottom {
+    margin: 0 0 20px 0;
+}
+.margin.bottom.min {
+    margin: 0 0 10px 0;
+}
+.margin.bottom.max {
+    margin: 0 0 40px 0;
+}
+/* > Right */
+.margin.right {
+    margin: 0 20px 0 0;
+}
+.margin.right.min {
+    margin: 0 10px 0 0;
+}
+.margin.right.max {
+    margin: 0 40px 0 0;
+}
+/* > Left */
+.margin.left {
+    margin: 0 0 0 20px;
+}
+.margin.left.min {
+    margin: 0 0 0 10px;
+}
+.margin.left.max {
+    margin: 0 0 0 40px;
+}
+
+/* Padding */
+.padding {
+    padding: 20px;
+}
+.padding.min {
+    padding: 10px;
+}
+.padding.max {
+    padding: 40px;
+}
+.padding.max2 {
+    padding: 80px;
+}
+/* padding > Hor */
+.padding.hor {
+    padding: 0 20px;
+}
+.padding.hor.min {
+    padding: 0 10px;
+}
+.padding.hor.max {
+    padding: 0 40px;
+}
+.padding.hor.max2 {
+    padding: 0 80px;
+}
+/* padding > Ver */
+.padding.ver {
+    padding: 20px 0;
+}
+.padding.ver.min {
+    padding: 10px 0;
+}
+.padding.ver.max {
+    padding: 40px 0;
+}
+.padding.ver.max2 {
+    padding: 80px 0;
+}
+/* padding > Dirs */
+/* > Top */
+.padding.top {
+    padding: 0 20px 0 0;
+}
+.padding.top.min {
+    padding: 0 10px 0 0;
+}
+.padding.top.max {
+    padding: 0 40px 0 0;
+}
+.padding.top.max2 {
+    padding: 0 80px 0 0;
+}
+/* > Bottom */
+.padding.bottom {
+    padding: 0 0 0 20px;
+}
+.padding.bottom.min {
+    padding: 0 0 0 10px;
+}
+.padding.bottom.max {
+    padding: 0 0 0 40px;
+}
+.padding.bottom.max2 {
+    padding: 0 0 0 80px;
+}
+/* > Right */
+.padding.right {
+    padding: 0 0 20px 0;
+}
+.padding.right.min {
+    padding: 0 0 10px 0;
+}
+.padding.right.max {
+    padding: 0 0 40px 0;
+}
+.padding.right.max2 {
+    padding: 0 0 80px 0;
+}
+/* > Left */
+.padding.left {
+    padding: 20px 0 0 0;
+}
+.padding.left.min {
+    padding: 10px 0 0 0;
+}
+.padding.left.max {
+    padding: 40px 0 0 0;
+}
+.padding.left.max2 {
+    padding: 80px 0 0 0;
+}
+
+/* Contents */
+.content {
+    display: flex;
+    flex-direction: row;
+}
+.content.block {
+    display: flex;
+    flex-direction: column;
+}
+.content.jus {
+    justify-content: space-between;
+}
+.content.wrap {
+    flex-wrap: wrap;
+}
+.content.cldcenter {
+    align-items: center;
+}
+.content.cldcenter.fill {
+    height: 100%;
+}
+.content.jus.fill {
+    width: 100%;
+}
+.content.block.fill {
+    width: 100%;
+}
+.content .centered {
+    margin: auto;
+}
+#app {
+    width: 100%;
+    height: 100%;
+}
+
+.bg {
+    background: #000;
+}
+.bg2 {
+    background: #f00;
+}
+.bg3 {
+    background: #0f0;
+}
+
+/* Grid */
+/* > Column */
+.col {
+    width: 100%;
+    display: flex;
+}
+.row .col {
+    height: 100%;
+}
+.col .s_col1 {
+    width: 100%;
+}
+.col .s_col2 {
+    width: calc(100% / 2);
+}
+.col .s_col3 {
+    width: calc(100% / 3);
+}
+.col .s_col4 {
+    width: calc(100% / 4);
+}
+.col .s_col5 {
+    width: calc(100% / 5);
+}
+.col .s_col6 {
+    width: calc(100% / 6);
+}
+/* > Row */
+.row {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.row .s_rowmax {
+    height: max-content;
+}
+.row .s_row1 {
+    height: 100%;
+}
+.row .s_row2 {
+    height: calc(100% / 2);
+}
+.row .s_row3 {
+    height: calc(100% / 3);
+}
+.row .s_row4 {
+    height: calc(100% / 4);
+}
+.row .s_row5 {
+    height: calc(100% / 5);
+}
+.row .s_row6 {
+    height: calc(100% / 6);
+}
+
+/* Positions */
+.pfixed {
+    position: fixed;
+    z-index: 999;
+}
+.psticky {
+    position: sticky;
+    z-index: 999;
+}
+
+/* Text */
+p, h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+}

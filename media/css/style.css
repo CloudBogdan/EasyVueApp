@@ -1,0 +1,80 @@
+body {
+    overflow-x: hidden;
+
+    font-family: Montserrat;
+    font-size: 18px;
+
+    background: #548eda;
+    color: #252525;
+}
+
+.card {
+    min-width: 500px;
+    max-width: 900px;
+    background: #fff;
+}
+.list_scroll {
+    height: 400px;
+    background: none;
+    overflow-y: auto;
+}
+.list_scroll::-webkit-scrollbar {
+    width: 6px;
+}
+.list_scroll::-webkit-scrollbar-track {
+    background: #fff;
+}
+.list_scroll::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0, .2);
+    border-radius: 5px;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    
+    border: none;
+}
+button {
+    padding: 0 20px;
+    height: 50px;
+
+    border: none;
+    background: #dfdfdf;
+
+    transition: .2s;
+}
+button:hover {
+    background: #619eee;
+    color: #fff;
+    cursor: pointer;
+}
+
+.list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.item {
+    width: 100%;
+    min-width: 500px;
+
+    text-align: center;
+    
+    background: #fff;
+    list-style: square;
+
+    -webkit-user-select: none;
+    transition: .2s;
+}
+.item:nth-child(2n) {
+    background: #f0f0f0;
+}
+.item:hover {
+    background: #dfdfdf;
+}
+.item.strike {
+    text-decoration: line-through;
+    color: #a0a0a0;
+}
